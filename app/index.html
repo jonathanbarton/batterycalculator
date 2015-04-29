@@ -40,43 +40,7 @@
     </div>
 </nav>
 <div class="container-fluid">
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3>Circuit Configuration</h3>
-    </div>
-    <div class="panel-body">
-      <div class="form-group">
-        <span class="label label-default">
-          Number of parallel connections:
-        </span>
-        <input type="text" class="form-control"/>
-        <span class="label label-default">
-          Number of series connections:
-        </span>
-        <input type="text" class="form-control"/>        
-      </div>
-    </div>
-  </div>
-    <div class="panel panel-info">
-    <div class="panel-heading">
-      <h3>Voltage / Charge</h3>
-    </div>
-    <div class="panel-body">
-      <div class="form-group">
-        <span class="label label-default">
-          Voltage (V):
-        </span>
-        <input type="text" class="form-control"/>
-        <span class="label label-default">
-          Charge / Capacity (mAh):
-        </span>
-        <input type="text" class="form-control"/>        
-      </div>
-    </div>
-  </div>
-  <a href="#" class="btn btn-primary" role="button">Redraw</a>
-
-  </div>
+  <div id="battery"></div>
 </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -96,7 +60,6 @@
     <script src="scripts/jquery.js"></script>
     <script src="scripts/mithril.min.js"></script>
     <script src="scripts/browserify/main.js"></script>
-
 </body>
 </html>
 
