@@ -44,6 +44,14 @@ var BatteryService = (function() {
 			    	context.lineTo(rowOffset*rowIndex+rowOffset-115, circuit[1]*colOffset+20);
 			    	context.stroke();	
 
+			    	if(rowIndex < circuit[0]) {
+			    		context.beginPath();
+			    		context.strokeStyle='#000';
+			    		context.moveTo(rowOffset*rowIndex-5, circuit[1]*colOffset+20);
+			    		context.lineTo(rowOffset*rowIndex+5, circuit[1]*colOffset+20);
+			    		context.stroke();		    		
+			    	}
+
 			    	for (var colIndex = 1; colIndex <= circuit[1]; colIndex++) {
 			    		context.beginPath();
 			    		context.strokeStyle='#000';
